@@ -7,54 +7,54 @@
     <style>
         body {
             background-image: url('https://media.istockphoto.com/id/178149253/photo/deep-space-background.jpg?s=612x612&w=0&k=20&c=w1hb2H1C-blV918LoG9mGB02nJY6cLJpR5Szfg7sLqE=');
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
             color: white;
+            font-family: Arial, sans-serif;
         }
         .login-container {
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
+            border-radius: 10px;
             padding: 20px;
             box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
             backdrop-filter: blur(10px);
             text-align: center;
         }
         input[type="text"], input[type="password"] {
-            width: 95%;
+            width: 100%;
             padding: 10px;
             margin: 10px 0;
             border: none;
             border-radius: 5px;
             outline: none;
-            transition: all 0.3s ease;
-            font-size: 16px;
-            color: white;
-            background: rgba(255, 255, 255, 0.2);
-            text-shadow: 1px 1px 2px black;
+            box-shadow: 0 0 10px white;
+            transition: transform 0.3s;
         }
         input[type="text"]:hover, input[type="password"]:hover {
             transform: scale(1.05);
         }
-        .login-button {
-            background: rgba(255, 215, 0, 0.7);
-            border: none;
-            border-radius: 5px;
+        button {
+            background: transparent;
+            border: 2px solid rgba(255, 215, 0, 0.8);
+            color: white;
             padding: 10px 20px;
+            border-radius: 5px;
             cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
             font-size: 16px;
-            transition: all 0.3s ease;
-            text-shadow: 1px 1px 2px black;
+            text-shadow: 0 0 5px black;
         }
-        .login-button:hover {
+        button:hover {
             transform: scale(1.1);
             box-shadow: 0 0 20px rgba(255, 215, 0, 1);
         }
         h1 {
-            text-shadow: 2px 2px 4px black;
+            text-shadow: 0 0 5px black;
+            text-align: center;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -63,7 +63,7 @@
         <h1>Login</h1>
         <input type="text" placeholder="Username" required>
         <input type="password" placeholder="Password" required>
-        <button class="login-button" onclick="window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0', '_blank')">Login</button>
+        <button onclick="window.open('https://www.youtube.com/watch?v=xvFZjo5PgG0', '_blank')">Login</button>
     </div>
 </body>
 </html>
